@@ -20,3 +20,18 @@ func (p person) print() {
 func (p *person) updateName(firstName string) {
 	p.firstName = firstName
 }
+
+func structsSample() {
+	person := person{
+		firstName: "Michael",
+		lastName: "Jackson",
+		contactInfo: contactInfo{
+			email: "michael@mail.com",
+		},
+	}
+
+	person.print()
+
+	person.updateName("Lorens")
+	person.print()
+}
