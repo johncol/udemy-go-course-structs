@@ -2,5 +2,6 @@ package main
 
 func main() {
 	// structsSample()
-	slicesSample()
+	// slicesSample()
+	mapsSample()
 }
