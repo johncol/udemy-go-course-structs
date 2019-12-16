@@ -20,4 +20,8 @@ func mapsSample() {
 
 	delete(colors, "white")
 	fmt.Println(colors)
+
+	for color, hex := range colors {
+		fmt.Println("Hex value for color", color, "is", hex)
+	}
 }
