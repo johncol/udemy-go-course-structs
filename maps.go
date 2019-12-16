@@ -14,4 +14,10 @@ func mapsSample() {
 
 	colors3 := make(map[string]string)
 	fmt.Println(colors3)
+
+	colors["red"] = "#ff0000"
+	fmt.Println(colors)
+
+	delete(colors, "white")
+	fmt.Println(colors)
 }
