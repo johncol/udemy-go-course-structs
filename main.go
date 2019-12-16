@@ -18,7 +18,7 @@ func (p person) print() {
 }
 
 func (p *person) updateName(firstName string) {
-	(*p).firstName = firstName
+	p.firstName = firstName
 }
 
 func main() {
@@ -33,5 +33,5 @@ func main() {
 	person.print()
 
 	person.updateName("Lorens")
-	(&person).print()
+	person.print()
 }
